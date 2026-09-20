@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis 15 Años - Maria Veliz</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Fuentes elegantes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cinzel:wght@500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Música de fondo -->
+  <audio id="bg-music" src="assets/musica/cancion.mp3" loop></audio>
+
+  <!-- ==================== PANTALLA 1: PORTADA EN CAPAS ==================== -->
+  <div id="pantalla-sobre" class="sobre-contenedor">
+
+    <!-- Capa 1: solo las 2 flores ornamentadas, en esquinas opuestas -->
+    <img src="assets/imagenes/flor-top-right.png" alt="Decoración floral" class="capa-flor flor-tr">
+    <img src="assets/imagenes/flor-bottom-left.png" alt="Decoración floral" class="capa-flor flor-bl">
+
+    <!-- Capa 2: Contenido central armonizado -->
+    <div class="contenido-portada">
+      <p class="subtitulo-xv">MIS XV</p>
+      <h1 class="nombre-quinceanera">Maria Veliz</h1>
+
+      <div class="separador-corazon">─── 🌿 ───</div>
+
+      <!-- El sobre interactivo -->
+      <div class="wrapper-sobre">
+        <img src="assets/imagenes/sobre.png" alt="Sobre de invitación" class="img-sobre">
+      </div>
+
+      <p class="frase-invitacion">Acompáñame a celebrar este día tan especial.</p>
+
+      <div class="separador-corazon">─── 🌿 ───</div>
+
+      <!-- Botón para abrir la invitación -->
+      <button id="btn-abrir" class="btn-abrir-sobre">
+        ABRIR INVITACIÓN
+      </button>
+    </div>
+
+  </div>
+
+  <!-- ==================== PANTALLA 2: CONTENIDO PRINCIPAL ==================== -->
+  <main class="invitacion">
+    <div class="reproductor">
+      <button id="btn-pausa" class="btn-musica">🎵</button>
+    </div>
+
+    <header class="cabecera fade-in">
+      <p class="etiqueta">MIS XV AÑOS</p>
+      <h1 class="titulo-principal">Maria Veliz</h1>
+    </header>
+
+    <!-- ===== SECCIÓN DE BENDICIÓN, PADRES Y QUINCE AÑOS ===== -->
+    <section class="tarjeta-presentacion fade-in">
+      <!-- Ramitas simples reutilizadas como acento discreto -->
+      <img src="assets/imagenes/flor-top-left.png" alt="" class="ramita-accento ramita-tl">
+      <img src="assets/imagenes/flor-bottom-right.png" alt="" class="ramita-accento ramita-br">
+
+      <p class="texto-bendicion">
+        Cumplir 15 años es el comienzo de una etapa hermosa. No hay mejor manera de celebrarlo que rodeada de las personas que más amo, dando gracias a Dios por estos años llenos de aprendizajes, risas y bendiciones, así como por la oportunidad de seguir creciendo y fortaleciendo los dones que me regaló para cada momento de mi vida.
+      </p>
+
+      <div class="seccion-familia">
+        <img src="assets/imagenes/padrinos.jpg" alt="Mis Padrinos: José Condori y Elsa Chavez" class="imagen-familia">
+        <img src="assets/imagenes/flor-decorativa.png" alt="" class="flor-familia flor-familia-izq">
+        <img src="assets/imagenes/flor-decorativa.png" alt="" class="flor-familia flor-familia-der">
+        <img src="assets/imagenes/padres.jpg" alt="Mis Padres: Edgar Veliz y Olivia Barzola" class="imagen-familia">
+      </div>
+    </section>
+
+    <!-- ===== FRASE ANTES DEL CALENDARIO ===== -->
+    <p class="frase-baile fade-in">Quiero festejar mis XV años bailando y gozando con la gente que más quiero. ¿Vienes?</p>
+
+    <!-- ===== CONTADOR (con el calendario arriba y los sapitos abajo) ===== -->
+    <section class="contador-caja fade-in">
+      <img src="assets/imagenes/calendario-noviembre.png" alt="Sábado 13 de Noviembre de 2026" class="imagen-bleed-lateral">
+      <img src="assets/imagenes/mariposas.png" alt="" class="mariposas-contador">
+      <h3 class="titulo-cuenta">Solo falta</h3>
+      <div class="contador">
+        <div class="unidad"><span id="dias">00</span><p>Días</p></div>
+        <span class="separador-tiempo">:</span>
+        <div class="unidad"><span id="horas">00</span><p>Horas</p></div>
+        <span class="separador-tiempo">:</span>
+        <div class="unidad"><span id="min">00</span><p>Minutos</p></div>
+        <span class="separador-tiempo">:</span>
+        <div class="unidad"><span id="seg" class="numero-segundos">00</span><p>Segundos</p></div>
+      </div>
+      <img src="assets/imagenes/sapos.png" alt="" class="img-sapos">
+    </section>
+
+    <!-- ===== DETALLES DE EVENTO ===== -->
+    <section class="detalles">
+      <div class="tarjeta tarjeta-ubicacion fade-in">
+        <a href="https://maps.app.goo.gl/3TSBd36jCsSo65no6" target="_blank" rel="noopener noreferrer" class="ubicacion-link">
+          <img src="assets/imagenes/ubicacion.png" alt="Ubicación: Recepciones Mariategui, frente a botica Visión. 8:00 PM. Toca para ver el mapa" class="imagen-contenida">
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== PLAYLIST ===== -->
+    <section class="playlist fade-in">
+      <h3 class="titulo-playlist">Armemos una playlist</h3>
+      <p class="texto-playlist">La música también construye sueños. Déjame tu recomendación para hacer de esta noche un recuerdo inolvidable.</p>
+      <div class="playlist-accion">
+        <img src="assets/imagenes/cocodrilo.png" alt="" class="img-cocodrilo">
+        <a id="btn-playlist" href="https://wa.me/51910803254?text=Hola%2C%20quiero%20recomendarte%20una%20canci%C3%B3n%20para%20la%20fiesta%3A%20" target="_blank" rel="noopener noreferrer" class="btn-dorado-pill">Música</a>
+      </div>
+    </section>
+
+    <!-- ===== CONFIRMACIÓN ===== -->
+    <section class="confirmacion fade-in">
+      <img src="assets/imagenes/flor-decorativa.png" alt="" class="flor-confirmacion">
+      <p class="texto-confirmacion">Tu presencia es parte de este sueño. Confirma tu asistencia y acompáñame a celebrar mis quince años.</p>
+      <button id="btn-whatsapp" class="btn-dorado-pill">Asistencia</button>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
